@@ -1,0 +1,31 @@
+{
+	"manifest_version": 3,
+	"name": "YouTube字幕下载器",
+	"version": "0.0.1",
+	"description": "下载YouTube视频的字幕",
+	"permissions": ["activeTab", "scripting"],
+	"host_permissions": ["https://*.youtube.com/*"],
+	"action": {
+		"default_popup": "popup.html",
+		"default_icon": {
+			"16": "icons/icon16.png",
+			"48": "icons/icon48.png",
+			"128": "icons/icon128.png"
+		}
+	},
+	"content_scripts": [
+		{
+			"matches": ["https://*.youtube.com/*"],
+			"js": ["content.js"],
+			"css": ["styles.css"]
+		}
+	],
+	"background": {
+		"service_worker": "background.js"
+	},
+	"icons": {
+		"16": "icons/icon16.png",
+		"48": "icons/icon48.png",
+		"128": "icons/icon128.png"
+	}
+}
