@@ -1,7 +1,7 @@
 {
 	"manifest_version": 3,
 	"name": "YouTube字幕下载器",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "下载YouTube视频的字幕",
 	"permissions": ["activeTab", "scripting"],
 	"host_permissions": ["https://*.youtube.com/*"],
@@ -15,7 +15,7 @@
 	},
 	"content_scripts": [
 		{
-			"matches": ["https://*.youtube.com/*"],
+			"matches": ["https://*.youtube.com/watch*"],
 			"js": ["content.js"],
 			"css": ["styles.css"]
 		}
