@@ -1,3 +1,5 @@
+> ⚠️ 本项目已停止维护并归档，欢迎 fork。This project is no longer maintained.
+
 # YouTube 字幕下载器
 
 <div align="center">
